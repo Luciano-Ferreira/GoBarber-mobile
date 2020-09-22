@@ -9,7 +9,7 @@
         "airbnb"
     ],
     "globals": {
-      "__DEV__": "readonly",
+        "__DEV__": "readonly",
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
