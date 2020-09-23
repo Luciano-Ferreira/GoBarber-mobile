@@ -7,6 +7,7 @@ const Dashboard: React.FC = () => {
   const {signOut} = useAuth();
 
   return (
+    // eslint-disable-next-line react-native/no-inline-styles
     <View style={{flex: 1, justifyContent: 'center'}}>
       <Button color="#ff9000" title="Sair" onPress={signOut} />
     </View>
