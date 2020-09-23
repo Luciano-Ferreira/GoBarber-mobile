@@ -7,7 +7,10 @@
 
 ![](https://imgur.com/Bt8wiT3.gif)
 
-Essa aplicação foi criada para o android pois para IOS é necessario ter um macOS
+
+
+
+
 
 ## :rocket: Tecnologias utilizadas:
 
