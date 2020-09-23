@@ -2,6 +2,7 @@
   <br>
   <img src=".github/logo.png" alt="Gobarber" width="200">
 </h1>
+
 # appgobarber
 
 ![](https://imgur.com/Bt8wiT3.gif)
