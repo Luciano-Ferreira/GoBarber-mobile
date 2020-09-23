@@ -11,18 +11,18 @@ Essa aplicação foi criada para o android pois para IOS é necessario ter um ma
 
 ## :rocket: Tecnologias utilizadas:
 
-styled-components para estilizar os componentes da aplicação;
+- styled-components para estilizar os componentes da aplicação;
 
-react-navigation/native para as rotas
+- react-navigation/native para as rotas
 
-Foram utilizadas fontes não padrões do sistemas "Roboto Slab".
+- Foram utilizadas fontes não padrões do sistemas "Roboto Slab".
 
-Que foram selecionadas e baixadas do google fonts.
+- Que foram selecionadas e baixadas do google fonts.
 
-@unform/core @unform/mobile para criação de formulários com alto desempenho
+- @unform/core @unform/mobile para criação de formulários com alto desempenho
 
-foi utilizado o YUP para fazer a validação dos formulários
+- foi utilizado o YUP para fazer a validação dos formulários
 
-Eslint e Prettier para padronizar o código
+- Eslint e Prettier para padronizar o código
 
-e axios para conectar com a api que é o nosso back-end feito em node.js
+- axios para conectar com a api que é o nosso back-end feito em node.js
