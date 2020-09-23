@@ -1,3 +1,7 @@
+<h1 align="center">
+  <br>
+  <img src=".github/logo.png" alt="Gobarber" width="200">
+</h1>
 # appgobarber
 
 ![](https://imgur.com/Bt8wiT3.gif)
@@ -18,6 +22,6 @@ Que foram selecionadas e baixadas do google fonts.
 
 foi utilizado o YUP para fazer a validação dos formulários
 
-e axios para conectar com a api
+Eslint e Prettier para padronizar o código
 
-que o nosso back-end feito em node.js
+e axios para conectar com a api que é o nosso back-end feito em node.js
