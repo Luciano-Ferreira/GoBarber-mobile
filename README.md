@@ -3,13 +3,13 @@
   <img src="github/logo.png" alt="Gobarber" width="200">
 </h1>
 
-# appgobarber
+# GoBarber App
 
 ![](https://imgur.com/Bt8wiT3.gif)
 
 Essa aplicação foi criada para o android pois para IOS é necessario ter um macOS
 
-## Tecnologias utilizadas:
+## :rocket: Tecnologias utilizadas:
 
 styled-components para estilizar os componentes da aplicação;
 
