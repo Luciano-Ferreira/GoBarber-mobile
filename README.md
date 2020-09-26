@@ -14,7 +14,7 @@
 
 ## :rocket: Tecnologias utilizadas:
 
-- styled-components para estilizar os componentes da aplicação;
+- styled-components/native para estilizar os componentes da aplicação;
 
 - react-navigation/native para as rotas
 
