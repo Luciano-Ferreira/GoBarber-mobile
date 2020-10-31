@@ -40,3 +40,7 @@ touch src/pages/Profile/index.tsx
 ## Header do Dashboard
 
 touch src/pages/Dashboard/styles.ts
+
+
+## Buscando providers da API
+
