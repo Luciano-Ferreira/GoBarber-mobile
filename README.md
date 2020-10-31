@@ -36,4 +36,7 @@ mkdir src/pages/CreateAppointment
 touch src/pages/CreateAppointment/index.tsx
 mkdir src/pages/Profile
 touch src/pages/Profile/index.tsx
-# appgobarberv2
+
+## Header do Dashboard
+
+touch src/pages/Dashboard/styles.ts
