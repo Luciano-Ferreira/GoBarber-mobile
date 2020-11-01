@@ -46,3 +46,8 @@ touch src/pages/Dashboard/styles.ts
 
 ## Listagem de prestadores
 
+# Agendamento
+
+## Estrutura da criação
+
+touch src/pages/CreateAppointment/styles.ts
