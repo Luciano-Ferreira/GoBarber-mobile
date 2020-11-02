@@ -57,14 +57,40 @@ export const ProviderContainer = styled(RectButton)<IProviderContainerProps>`
   margin-right: 16px;
   border-radius: 10px;
 `;
+
 export const ProviderAvatar = styled.Image`
   width: 32px;
   height: 32px;
   border-radius: 16px;
 `;
+
 export const ProviderName = styled.Text<IProviderNameProps>`
   margin-left: 8px;
   font-family: 'RobotoSlab-Medium';
   font-size: 16px;
   color: ${(props) => (props.selected ? '#232129' : '#f4ede8')};
+`;
+
+export const CalendarContainer = styled.View``;
+
+export const CalendarTitle = styled.Text`
+  font-family: 'RobotoSlab-Medium';
+  color: #f4ede8;
+  font-size: 24px;
+  margin: 0 24px 24px;
+`;
+
+export const OpenDatePickerButton = styled(RectButton)`
+  height: 46px;
+  background-color: #ff9000;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 24px;
+`;
+
+export const OpenDatePickerButtonText = styled.Text`
+  font-family: 'RobotoSlab-Medium';
+  font-size: 16px;
+  color: #232129;
 `;

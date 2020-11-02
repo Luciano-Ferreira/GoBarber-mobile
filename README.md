@@ -27,27 +27,3 @@ Eslint e Prettier para padronizar o código
 
 e axios para conectar com a api que é o nosso back-end feito em node.js
 
-
-## Criando paginas e rotas
-
-mkdir src/pages/AppointmentCreated
-touch src/pages/AppointmentCreated/index.tsx
-mkdir src/pages/CreateAppointment
-touch src/pages/CreateAppointment/index.tsx
-mkdir src/pages/Profile
-touch src/pages/Profile/index.tsx
-
-## Header do Dashboard
-
-touch src/pages/Dashboard/styles.ts
-
-
-## Buscando providers da API
-
-## Listagem de prestadores
-
-# Agendamento
-
-## Estrutura da criação
-
-touch src/pages/CreateAppointment/styles.ts
