@@ -27,3 +27,6 @@ Eslint e Prettier para padronizar o código
 
 e axios para conectar com a api que é o nosso back-end feito em node.js
 
+## debugan app com Flipper
+
+no linux va até o binário extraído e no terminal ./flipper
