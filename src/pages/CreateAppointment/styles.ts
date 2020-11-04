@@ -71,9 +71,9 @@ export const ProviderName = styled.Text<IProviderNameProps>`
   color: ${(props) => (props.selected ? '#232129' : '#f4ede8')};
 `;
 
-export const CalendarContainer = styled.View``;
+export const Calendar = styled.View``;
 
-export const CalendarTitle = styled.Text`
+export const Title = styled.Text`
   font-family: 'RobotoSlab-Medium';
   color: #f4ede8;
   font-size: 24px;
