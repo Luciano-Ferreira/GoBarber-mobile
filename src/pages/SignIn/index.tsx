@@ -1,5 +1,5 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, {useCallback, useRef} from 'react';
+import React, { useCallback, useRef } from 'react';
 import {
   Image,
   View,
@@ -10,11 +10,11 @@ import {
   Alert,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import * as Yup from 'yup';
-import {Form} from '@unform/mobile';
+import { Form } from '@unform/mobile';
 
-import {FormHandles} from '@unform/core';
+import { FormHandles } from '@unform/core';
 import getValidationErrors from '../../utils/getValidationErrors';
 
 import Input from '../../components/Input';
@@ -30,7 +30,7 @@ import {
   CreateAccountButtonText,
 } from './styles';
 
-import {useAuth} from '../../hooks/auth';
+import { useAuth } from '../../hooks/auth';
 
 interface SignInFormData {
   email: string;
@@ -43,7 +43,7 @@ const SignIn: React.FC = () => {
 
   const navigation = useNavigation();
 
-  const {signIn} = useAuth();
+  const { signIn } = useAuth();
 
   const handleSignIn = useCallback(
     async (data: SignInFormData) => {
@@ -87,12 +87,12 @@ const SignIn: React.FC = () => {
   return (
     <>
       <KeyboardAvoidingView
-        style={{flex: 1}}
+        style={{ flex: 1 }}
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
         enabled>
         <ScrollView
           keyboardShouldPersistTaps="handled"
-          contentContainerStyle={{flex: 1}}>
+          contentContainerStyle={{ flex: 1 }}>
           <Container>
             <Image source={logoImg} />
             <View>

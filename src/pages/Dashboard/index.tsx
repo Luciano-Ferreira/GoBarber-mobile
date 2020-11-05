@@ -1,8 +1,8 @@
-import React, {useCallback, useEffect, useState} from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 
 import Icon from 'react-native-vector-icons/Feather';
-import {useNavigation} from '@react-navigation/native';
-import {useAuth} from '../../hooks/auth';
+import { useNavigation } from '@react-navigation/native';
+import { useAuth } from '../../hooks/auth';
 import api from '../../services/api';
 
 import {
@@ -31,8 +31,8 @@ export interface IProvider {
 const Dashboard: React.FC = () => {
   const [providers, setProviders] = useState<IProvider[]>([]);
 
-  const {signOut, user} = useAuth();
-  const {navigate} = useNavigation();
+  const { user } = useAuth();
+  const { navigate } = useNavigation();
 
   useEffect(() => {
     api.get('providers').then((response) => {
@@ -41,14 +41,12 @@ const Dashboard: React.FC = () => {
   }, []);
 
   const navigateToProfile = useCallback(() => {
-    // navigate('Profile');
-
-    signOut();
-  }, [signOut]);
+    navigate('Profile');
+  }, [navigate]);
 
   const navigateToCreateAppointment = useCallback(
     (providerId: string) => {
-      navigate('CreateAppointment', {providerId});
+      navigate('CreateAppointment', { providerId });
     },
     [navigate],
   );
@@ -76,10 +74,10 @@ const Dashboard: React.FC = () => {
         ListHeaderComponent={
           <ProvidersListTitle>Cabeleireiros</ProvidersListTitle>
         }
-        renderItem={({item: provider}) => (
+        renderItem={({ item: provider }) => (
           <ProviderContainer
             onPress={() => navigateToCreateAppointment(provider.id)}>
-            <ProviderAvatar source={{uri: provider.avatar_url}} />
+            <ProviderAvatar source={{ uri: provider.avatar_url }} />
 
             <ProviderInfo>
               <ProviderName>{provider.name}</ProviderName>

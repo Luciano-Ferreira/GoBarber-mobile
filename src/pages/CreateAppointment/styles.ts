@@ -1,8 +1,8 @@
 import styled from 'styled-components/native';
-import {FlatList} from 'react-native';
-import {getStatusBarHeight} from 'react-native-iphone-x-helper';
-import {IProvider} from './index';
-import {RectButton} from 'react-native-gesture-handler';
+import { FlatList } from 'react-native';
+import { getStatusBarHeight } from 'react-native-iphone-x-helper';
+import { IProvider } from './index';
+import { RectButton } from 'react-native-gesture-handler';
 
 interface IProviderContainerProps {
   selected: boolean;
@@ -123,7 +123,7 @@ export const SectionTitle = styled.Text`
 `;
 
 export const SectionContent = styled.ScrollView.attrs({
-  contentContainerStyle: {paddingHorizontal: 24},
+  contentContainerStyle: { paddingHorizontal: 24 },
   horizontal: true,
   showsHorizontalScrollIndicator: false,
 })``;
