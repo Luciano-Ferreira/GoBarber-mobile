@@ -30,11 +30,12 @@ interface AuthContextData {
   loading: boolean;
   signIn(credentials: SignInCredentials): Promise<void>;
   signOut(): void;
+  updateUser(user: User): Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
-const AuthProvider: React.FC = ({children}) => {
+const AuthProvider: React.FC = ({ children }) => {
   const [data, setData] = useState<AuthState>({} as AuthState);
   const [loading, setLoading] = useState(true);
 
@@ -48,20 +49,20 @@ const AuthProvider: React.FC = ({children}) => {
       if (token[1] && user[1]) {
         api.defaults.headers.authorization = `Bearer ${token[1]}`;
 
-        setData({token: token[1], user: JSON.parse(user[1])});
+        setData({ token: token[1], user: JSON.parse(user[1]) });
       }
       setLoading(false);
     }
     loadStoragedData();
   }, []);
 
-  const signIn = useCallback(async ({email, password}) => {
-    const response = await api.post<{token: string; user: User}>('sessions', {
+  const signIn = useCallback(async ({ email, password }) => {
+    const response = await api.post<{ token: string; user: User }>('sessions', {
       email,
       password,
     });
 
-    const {token, user} = response.data;
+    const { token, user } = response.data;
 
     await AsyncStorage.multiSet([
       ['@GoBarber:token', token],
@@ -70,7 +71,7 @@ const AuthProvider: React.FC = ({children}) => {
 
     api.defaults.headers.authorization = `Bearer ${token}`;
 
-    setData({token, user});
+    setData({ token, user });
   }, []);
 
   const signOut = useCallback(async () => {
@@ -79,8 +80,21 @@ const AuthProvider: React.FC = ({children}) => {
     setData({} as AuthState);
   }, []);
 
+  const updateUser = useCallback(
+    async (user: User) => {
+      await AsyncStorage.setItem('@GoBarber:user', JSON.stringify(user));
+
+      setData({
+        token: data.token,
+        user,
+      });
+    },
+    [setData, data.token],
+  );
+
   return (
-    <AuthContext.Provider value={{user: data.user, loading, signIn, signOut}}>
+    <AuthContext.Provider
+      value={{ user: data.user, loading, signIn, signOut, updateUser }}>
       {children}
     </AuthContext.Provider>
   );
@@ -96,4 +110,4 @@ function useAuth(): AuthContextData {
   return context;
 }
 
-export {AuthProvider, useAuth};
+export { AuthProvider, useAuth };
