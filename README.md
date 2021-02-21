@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src=".github/logo.png" alt="Gobarber" width="200">
+  <img src="github/logo.png" alt="Gobarber" width="200">
 </h1>
 
 # appgobarber
