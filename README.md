@@ -1,7 +1,11 @@
-<h1 align="center">
-  <br>
-  <img src="github/logo.png" alt="Gobarber" width="200">
-</h1>
+<div align="center">
+  <img src="./github/logo.svg" alt="GoBarber">
+</div>
+
+---
+<div align="center" >
+  <img src="./github/readmegobarbermobile.gif" alt="demo-web" height="425">
+</div>
 
 # appgobarber
 
